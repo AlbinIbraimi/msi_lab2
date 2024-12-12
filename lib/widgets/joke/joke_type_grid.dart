@@ -12,8 +12,7 @@ class JokeTypeGrid extends StatefulWidget {
 class _JokeTypeGrid extends State<JokeTypeGrid> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+    return ListView(
         children: widget.jokeTypes
             .map((jokeType) => JokeTypeCard(jokeType: jokeType))
             .toList());

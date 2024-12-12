@@ -13,8 +13,7 @@ class JokesForTypeGrid extends StatefulWidget {
 class _JokeTypeGrid extends State<JokesForTypeGrid> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+    return ListView(
         children:
             widget.jokes.map((element) => JokeCard(joke: element)).toList());
   }
