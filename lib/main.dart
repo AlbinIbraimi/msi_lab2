@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:msi_lab2/screens/home.dart';
+import 'package:msi_lab2/screens/joke_of_the_day.dart';
 import 'package:msi_lab2/screens/jokes.dart';
 
 void main() {
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const Home(),
-        '/jokes': (context) => const JokesScreen()
+        '/jokes': (context) => const JokesScreen(),
+        '/jokeOfTheDay': (context) => const JokeOfTheDay()
       },
     );
   }
